@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик дня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <h1>Планировщик дня</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2>Что такое планировщик дня?</h2>
+        <p>Это веб-приложение, чтобы записывать задачи на каждый час. Вы можете вписать дело и отметить его галочкой, когда сделаете.</p>
+        <p>Все данные сохраняются. Даже если вы закроете страницу, задачи не пропадут.</p>
+        
+        <h2>Почему полезно планировать день?</h2>
+        <ul>
+            <li>Меньше забытых дел.</li>
+            <li>Вы сами управляете своим временем.</li>
+            <li>Приятно видеть выполненные задачи.</li>
+            <li>Появляется свободное время для отдыха.</li>
+        </ul>
+    </section>
+
+    <section>
+        <div class="stats-panel">
+            <div>Всего задач: <span id="totalTasks">0</span></div>
+            <div>Выполнено: <span id="doneTasks">0</span></div>
+            <button id="clearDoneBtn" class="small-btn">Очистить выполненные</button>
+            <button id="resetAllBtn" class="small-btn red">Сбросить всё</button>
+        </div>
+
+        <div class="schedule">
+            <div class="schedule-row header-row">
+                <div>Время</div>
+                <div>Задача</div>
+                <div>Готово</div>
+            </div>
+            <div id="tasksList"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-cols">
+        <div class="footer-col">
+            <h3>Планировщик дня</h3>
+            <p>Планируй свои задачи </p>
+        </div>
+        <div class="footer-col">
+            <h3>Быстрые ссылки</h3>
+            <p><a href="index.html">Главная</a> | <a href="gallery.html">Галерея</a> | <a href="contacts.html">Контакты</a></p>
+        </div>
+        <div class="footer-col">
+            <h3>О проекте</h3>
+            <p>Веб-приложение для планирования задач</p>
+            <p>Волков Слава, 1 курс, 2026</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

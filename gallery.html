@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Планировщик дня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <h1>Планировщик дня</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html" class="active">Галерея</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h2>Фотогалерея</h2>
+    <p>Нажмите на сердечко, если понравилась картинка</p>
+
+    <div class="gallery-controls">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="morning">Утро</button>
+            <button class="filter-btn" data-filter="work">Работа</button>
+            <button class="filter-btn" data-filter="evening">Вечер</button>
+        </div>
+        <div class="gallery-stats">
+            <span>Фото: <span id="photoCount">0</span></span>
+            <span>Сердечек: <span id="totalLikes">0</span></span>
+        </div>
+        <button id="resetLikesBtn" class="small-btn">убрать все сердца</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"></div>
+</main>
+
+<footer>
+    <div class="footer-cols">
+        <div class="footer-col">
+            <h3>Планировщик дня</h3>
+            <p>Планируй свои задачи </p>
+        </div>
+        <div class="footer-col">
+            <h3>Быстрые ссылки</h3>
+            <p><a href="index.html">Главная</a> | <a href="gallery.html">Галерея</a> | <a href="contacts.html">Контакты</a></p>
+        </div>
+        <div class="footer-col">
+            <h3>О проекте</h3>
+            <p>Веб-приложение для планирования задач </p>
+            <p>Волков Слава, 1 курс, 2026</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Планировщик дня</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <h1>Планировщик дня</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="two-columns">
+        <div class="info-card">
+            <h3>Волков Слава</h3>
+            <p class="spec">Студент 1 курса</p>
+            <p>slava356787@gmail.com</p>
+            <p>Москва, Россия</p>
+            <div class="socials">
+                <a href="mailto:slava356787@gmail.com">Gmail</a>
+                
+            </div>
+        </div>
+
+        <div class="form-card">
+            <h3>Свяжитесь со мной</h3>
+            <form id="feedbackForm">
+                <div class="input-group">
+                    <label>Ваше имя</label>
+                    <input type="text" id="name" required placeholder="Александр Кушкян">
+                </div>
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" required placeholder="aleksandr@mail.ru">
+                </div>
+                <div class="input-group">
+                    <label>Тема сообщения</label>
+                    <select id="topic">
+                        <option value="question">Вопрос</option>
+                        <option value="bug">Ошибка на сайте</option>
+                        <option value="suggestion">Предложение</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Сообщение</label>
+                    <textarea id="message" rows="4" required placeholder="Напишите подробно..."></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label>Я согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-cols">
+        <div class="footer-col">
+            <h3>Планировщик дня</h3>
+            <p>Планируй свои задачи </p>
+        </div>
+        <div class="footer-col">
+            <h3>Быстрые ссылки</h3>
+            <p><a href="index.html">Главная</a> | <a href="gallery.html">Галерея</a> | <a href="contacts.html">Контакты</a></p>
+        </div>
+        <div class="footer-col">
+            <h3>О проекте</h3>
+            <p>Веб-приложение для планирования задач</p>
+            <p>Волков Слава, 1 курс, 2026</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
