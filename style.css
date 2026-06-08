@@ -36,6 +36,7 @@ header h1 {
     justify-content: center;
     margin-top: 10px;
 }
+
 .main-menu a {
     background: #2d3e50;
     color: white;
@@ -45,7 +46,11 @@ header h1 {
 }
 
 .main-menu a.active {
-    background: #e67e22;
+    background: #27ae60;
+}
+
+.main-menu a:hover {
+    background: #2ecc71;
 }
 
 main {
@@ -58,7 +63,7 @@ main {
 
 section h2 {
     margin: 15px 0 8px 0;
-    border-left: 4px solid #e67e22;
+    border-left: 4px solid #27ae60;
     padding-left: 12px;
 }
 
@@ -99,6 +104,14 @@ section li {
     background: #e74c3c;
 }
 
+.small-btn.red:hover {
+    background: #c0392b;
+}
+
+.small-btn:hover {
+    opacity: 0.85;
+}
+
 .schedule {
     border: 1px solid #ddd;
     border-radius: 12px;
@@ -123,6 +136,11 @@ section li {
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 8px;
+}
+
+.task-input:focus {
+    outline: none;
+    border-color: #27ae60;
 }
 
 .task-check {
@@ -157,7 +175,12 @@ section li {
 }
 
 .filter-btn.active {
-    background: #e67e22;
+    background: #27ae60;
+    color: white;
+}
+
+.filter-btn:hover {
+    background: #2ecc71;
     color: white;
 }
 
@@ -195,13 +218,33 @@ section li {
     padding: 12px;
 }
 
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e2a3a;
+}
+
 .like-btn {
     background: #f1f5f9;
     border: none;
     padding: 5px 12px;
     border-radius: 20px;
     cursor: pointer;
-    margin-top: 8px;
+    font-size: 13px;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.like-btn:hover {
+    background: #27ae60;
+    color: white;
 }
 
 .two-columns {
@@ -219,7 +262,7 @@ section li {
 }
 
 .spec {
-    color: #e67e22;
+    color: #27ae60;
     margin: 8px 0;
 }
 
@@ -227,6 +270,7 @@ section li {
     display: flex;
     gap: 15px;
     margin: 15px 0;
+    flex-wrap: wrap;
 }
 
 .socials a {
@@ -235,6 +279,11 @@ section li {
     border-radius: 20px;
     text-decoration: none;
     color: #1e2a3a;
+}
+
+.socials a:hover {
+    background: #27ae60;
+    color: white;
 }
 
 .input-group {
@@ -254,6 +303,11 @@ section li {
     border-radius: 8px;
 }
 
+.input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+    outline: none;
+    border-color: #27ae60;
+}
+
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -262,7 +316,7 @@ section li {
 }
 
 .submit-btn {
-    background: #e67e22;
+    background: #27ae60;
     color: white;
     border: none;
     padding: 10px;
@@ -270,6 +324,10 @@ section li {
     width: 100%;
     cursor: pointer;
     font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #2ecc71;
 }
 
 footer {
@@ -301,11 +359,11 @@ footer {
     text-decoration: none;
 }
 
+.footer-col a:hover {
+    color: #2ecc71;
+}
+
 @media (max-width: 600px) {
-    .header-top {
-        flex-direction: column;
-        text-align: center;
-    }
     .schedule-row {
         grid-template-columns: 60px 1fr 50px;
         font-size: 12px;
@@ -313,32 +371,7 @@ footer {
     .two-columns {
         flex-direction: column;
     }
-}
-.card-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-
-.card-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #1e2a3a;
-}
-
-.like-btn {
-    background: #f1f5f9;
-    border: none;
-    padding: 5px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 13px;
-    transition: 0.2s;
-    white-space: nowrap;
-}
-
-.like-btn:hover {
-    background: #fee2e2;
-    color: #e11d48;
+    .socials {
+        justify-content: center;
+    }
 }
